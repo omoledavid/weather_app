@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400&family=Space+Grotesk:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body
+    class="py-3 px-5 bg-gradient-to-r from-purple-500 to-pink-500 flex justify-center font-mont"
+  >
+    <div
+      class="h-auto max-w-full w-96 mt-28 rounded-3xl shadow-sm bg-gradient-to-br from-[#ffffff1b] to-[#ffffff62] backdrop-opacity-10"
+    >
+      <div class="flex mt-3 p-3">
+        <input id="city" class="w-96 px-5 py-3 m-4 rounded-xl" type="text" />
+        <button id="checkBtn"><img src="./images/search.png" alt="" /></button>
+      </div>
+      <div class="flex justify-center mt-3 p-3">
+        <img class="w-32 weather-icon" src="./images/sunny.png" alt="" />
+        <div class="grid content-center items-center">
+          <h3 class="city">New York</h3>
+          <p class="desc font-montserrat">Sunny</p>
+        </div>
+      </div>
+      <h1 id="temp" class="text-center text-5xl font-bold">22°C</h1>
+      <div class="flex justify-around mt-14 mb-6">
+        <div class="flex">
+          <img src="./images/Humidity.png" alt="" />
+          <div class="grid">
+            <h3 id="humidity">49%</h3>
+            <h2>Humidity</h2>
+          </div>
+        </div>
+        <div class="flex">
+          <img src="./images/wind.png" alt="" />
+          <div class="grid">
+            <h3 id="wind">1.03km/h</h3>
+            <h2>Wind</h2>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./api.js"></script>
+  </body>
+</html>
